@@ -13,6 +13,8 @@
 		1AA394A228B174F00064284D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA394A028B174F00064284D /* Main.storyboard */; };
 		1AA394A428B174F20064284D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AA394A328B174F20064284D /* Assets.xcassets */; };
 		1AA394A728B174F20064284D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA394A528B174F20064284D /* LaunchScreen.storyboard */; };
+		1AA394AF28B1751D0064284D /* PositioningLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 1AA394AE28B1751D0064284D /* PositioningLibrary */; };
+		1AAFF98928B770DA00ED4B0A /* mydata.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AAFF98828B770DA00ED4B0A /* mydata.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,7 @@
 		1AA394A128B174F00064284D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AA394A328B174F20064284D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1AA394A628B174F20064284D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AAFF98828B770DA00ED4B0A /* mydata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = mydata.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA394AF28B1751D0064284D /* PositioningLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +65,7 @@
 				1AA394A028B174F00064284D /* Main.storyboard */,
 				1AA394A328B174F20064284D /* Assets.xcassets */,
 				1AA394A528B174F20064284D /* LaunchScreen.storyboard */,
+				1AAFF98828B770DA00ED4B0A /* mydata.json */,
 			);
 			path = TryLibrary;
 			sourceTree = "<group>";
@@ -81,6 +86,9 @@
 			dependencies = (
 			);
 			name = TryLibrary;
+			packageProductDependencies = (
+				1AA394AE28B1751D0064284D /* PositioningLibrary */,
+			);
 			productName = TryLibrary;
 			productReference = 1AA3949728B174F00064284D /* TryLibrary.app */;
 			productType = "com.apple.product-type.application";
@@ -109,6 +117,9 @@
 				Base,
 			);
 			mainGroup = 1AA3948E28B174F00064284D;
+			packageReferences = (
+				1AA394AD28B1751D0064284D /* XCRemoteSwiftPackageReference "PositioningLibrary" */,
+			);
 			productRefGroup = 1AA3949828B174F00064284D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 				1AA394A728B174F20064284D /* LaunchScreen.storyboard in Resources */,
 				1AA394A428B174F20064284D /* Assets.xcassets in Resources */,
 				1AA394A228B174F00064284D /* Main.storyboard in Resources */,
+				1AAFF98928B770DA00ED4B0A /* mydata.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1AA394AD28B1751D0064284D /* XCRemoteSwiftPackageReference "PositioningLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tirannosario/PositioningLibrary.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1AA394AE28B1751D0064284D /* PositioningLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AA394AD28B1751D0064284D /* XCRemoteSwiftPackageReference "PositioningLibrary" */;
+			productName = PositioningLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1AA3948F28B174F00064284D /* Project object */;
 }
