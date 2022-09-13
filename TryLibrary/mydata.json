@@ -2,128 +2,160 @@
     "buildings" : [
         {
             "id": "b1",
-            "name": "Casa"
+            "name": "Casa",
+            "latitude": 45.47908247767321,
+            "longitude": 9.227200675127934
         },
         {
             "id": "b2",
-            "name": "MoMA"
+            "name": "MoMA",
+            "latitude": 40.76141278416226,
+            "longitude": -73.97759781909012
         }
     ],
     "floors": [
         {
             "id": "f1_1",
-            "name": "piano S",
+            "name": "piano terra",
             "number": 0,
             "building": "b1",
-            "maxWidth": 5.10,
-            "maxHeight": 2.43
+            "maxWidth": 8.16,
+            "maxHeight": 5.3,
+            "floorMap": "piano0"
         },
         {
             "id": "f1_2",
-            "name": "piano R",
+            "name": "primo piano",
             "number": 1,
             "building": "b1",
-            "maxWidth": 2.95,
-            "maxHeight": 2.55
-        },
-        {
-            "id": "f2_1",
-            "name": "piano B",
-            "number": 0,
-            "building": "b2",
-            "maxWidth": 3.83,
-            "maxHeight": 2.70
+            "maxWidth": 6.55,
+            "maxHeight": 13.65,
+            "floorMap": "piano1"
         }
     ],
     "markers": [
         {
-            "id": "S1",
-            "image": "S1",
+            "id": "C01",
+            "image": "co1",
             "physicalWidth": 0.12,
             "location":  {
-                "x": 1.95,
-                "y": 0,
+                "x": 0,
+                "y": 0.90,
+                "heading": -1.57,
+                "floor": "f1_1"
+            }
+        },
+        {
+            "id": "CR1",
+            "image": "cr1",
+            "physicalWidth": 0.28,
+            "location":  {
+                "x": 0.90,
+                "y": 5.50,
+                "heading": 3.14,
+                "floor": "f1_1"
+            }
+        },
+        {
+            "id": "CR2",
+            "image": "cr2",
+            "physicalWidth": 0.28,
+            "location":  {
+                "x": 2.97,
+                "y": 3.20,
+                "heading": 1.57,
+                "floor": "f1_1"
+            }
+        },
+        {
+            "id": "CS1",
+            "image": "cs1",
+            "physicalWidth": 0.12,
+            "location":  {
+                "x": 5.15,
+                "y": 3.1,
                 "heading": 0,
                 "floor": "f1_1"
             }
         },
         {
-            "id": "S2",
-            "image": "S2",
-            "physicalWidth": 0.12,
-            "location":  {
-                "x": 0.33,
-                "y": 0.88,
-                "heading": -0.785,
-                "floor": "f1_1"
-            }
-        },
-        {
-            "id": "S3",
-            "image": "S3",
-            "physicalWidth": 0.15,
-            "location":  {
-                "x": 3.82,
-                "y": 1.87,
-                "heading": 3.14,
-                "floor": "f1_1"
-            }
-        },
-        {
-            "id": "S4",
-            "image": "S4",
+            "id": "CS2",
+            "image": "cs2",
             "physicalWidth": 0.22,
             "location":  {
-                "x": 5.10,
-                "y": 0.85,
+                "x": 8.10,
+                "y": 3.95,
                 "heading": 1.57,
                 "floor": "f1_1"
             }
         },
         {
-            "id": "R1",
-            "image": "R1",
-            "physicalWidth": 0.28,
-            "location":  {
-                "x": 2.95,
-                "y": 0.30,
-                "heading": 1.57,
-                "floor": "f1_2"
-            }
-        },
-        {
-            "id": "R2",
-            "image": "R2",
-            "physicalWidth": 0.28,
-            "location":  {
-                "x": 0.93,
-                "y": 2.55,
-                "heading": 3.14,
-                "floor": "f1_2"
-            }
-        },
-        {
-            "id": "B1",
-            "image": "B1",
+            "id": "BG1",
+            "image": "bg1",
             "physicalWidth": 0.12,
             "location":  {
-                "x": 1.90,
+                "x": 6.6,
                 "y": 2.70,
                 "heading": 3.14,
-                "floor": "f2_1"
+                "floor": "f1_1"
             }
         },
         {
-            "id": "B2",
-            "image": "B2",
+            "id": "BG2",
+            "image": "bg2",
             "physicalWidth": 0.12,
             "location":  {
-                "x": 3.83,
+                "x": 8.1,
                 "y": 1.18,
                 "heading": 1.57,
-                "floor": "f2_1"
+                "floor": "f1_1"
+            }
+        },
+        {
+            "id": "SL1",
+            "image": "sl1",
+            "physicalWidth": 1,
+            "location":  {
+                "x": 6.5,
+                "y": 9.5,
+                "heading": 1.57,
+                "floor": "f1_2"
+            }
+        },
+        {
+            "id": "SL2",
+            "image": "sl2",
+            "physicalWidth": 1,
+            "location":  {
+                "x": 1.9,
+                "y": 4.7,
+                "heading": 0,
+                "floor": "f1_2"
+            }
+        },
+        {
+            "id": "ST1",
+            "image": "st1",
+            "physicalWidth": 0.15,
+            "location":  {
+                "x": 0,
+                "y": 2.6,
+                "heading": -1.57,
+                "floor": "f1_2"
+            }
+        },
+        {
+            "id": "ST2",
+            "image": "st2",
+            "physicalWidth": 0.48,
+            "location":  {
+                "x": 3.80,
+                "y": 1.25,
+                "heading": 1.57,
+                "floor": "f1_2"
             }
         }
     ]
 }
+
 
