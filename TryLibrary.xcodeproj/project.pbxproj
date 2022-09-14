@@ -15,6 +15,7 @@
 		1AA394A728B174F20064284D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AA394A528B174F20064284D /* LaunchScreen.storyboard */; };
 		1AA394AF28B1751D0064284D /* PositioningLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 1AA394AE28B1751D0064284D /* PositioningLibrary */; };
 		1AAFF98928B770DA00ED4B0A /* mydata.json in Resources */ = {isa = PBXBuildFile; fileRef = 1AAFF98828B770DA00ED4B0A /* mydata.json */; };
+		1AC8E40628D232AB001F7C79 /* Drops in Frameworks */ = {isa = PBXBuildFile; productRef = 1AC8E40528D232AB001F7C79 /* Drops */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AA394AF28B1751D0064284D /* PositioningLibrary in Frameworks */,
+				1AC8E40628D232AB001F7C79 /* Drops in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +90,7 @@
 			name = TryLibrary;
 			packageProductDependencies = (
 				1AA394AE28B1751D0064284D /* PositioningLibrary */,
+				1AC8E40528D232AB001F7C79 /* Drops */,
 			);
 			productName = TryLibrary;
 			productReference = 1AA3949728B174F00064284D /* TryLibrary.app */;
@@ -119,6 +122,7 @@
 			mainGroup = 1AA3948E28B174F00064284D;
 			packageReferences = (
 				1AA394AD28B1751D0064284D /* XCRemoteSwiftPackageReference "PositioningLibrary" */,
+				1AC8E40428D232AB001F7C79 /* XCRemoteSwiftPackageReference "Drops" */,
 			);
 			productRefGroup = 1AA3949828B174F00064284D /* Products */;
 			projectDirPath = "";
@@ -382,6 +386,14 @@
 				kind = branch;
 			};
 		};
+		1AC8E40428D232AB001F7C79 /* XCRemoteSwiftPackageReference "Drops" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/omaralbeik/Drops";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -389,6 +401,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1AA394AD28B1751D0064284D /* XCRemoteSwiftPackageReference "PositioningLibrary" */;
 			productName = PositioningLibrary;
+		};
+		1AC8E40528D232AB001F7C79 /* Drops */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1AC8E40428D232AB001F7C79 /* XCRemoteSwiftPackageReference "Drops" */;
+			productName = Drops;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

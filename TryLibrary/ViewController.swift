@@ -9,6 +9,7 @@ import UIKit
 import RealityKit
 import PositioningLibrary
 import MapKit
+import Drops // to show messages
 
 class ViewController: UIViewController, LocationObserver {
     
@@ -88,10 +89,24 @@ class ViewController: UIViewController, LocationObserver {
     
     func onBuildingChanged(_ newBuilding: Building) {
         print("Building changed: \(newBuilding.name)")
+        let drop = Drop(
+            title: newBuilding.name,
+            subtitle: "Building changed",
+            icon: UIImage(systemName: "building"),
+            accessibility: "Alert: Title, Subtitle"
+        )
+        Drops.show(drop)
     }
     
     func onFloorChanged(_ newFloor: Floor) {
         print("Floor changed: \(newFloor.number)")
+        let drop = Drop(
+            title: newFloor.name,
+            subtitle: "Floor changed: \(newFloor.number)°",
+            icon: UIImage(systemName: "chevron.up.chevron.down"),
+            accessibility: "Alert: Title, Subtitle"
+        )
+        Drops.show(drop)
     }
     
 
