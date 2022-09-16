@@ -28,14 +28,14 @@ class ViewController: UIViewController, LocationObserver {
         self.locationProvider = LocationProvider(arView: arView, jsonName: "mydata")
         
         self.locationProvider.addLocationObserver(locationObserver: self)
-        self.locationProvider.start(debug: true)
+        self.locationProvider.start()
         
         // creation of FloorMapView w/ the Outlet
 //        arView.addSubview(floorMapView)
 //        self.locationProvider.addLocationObserver(locationObserver: floorMapView)
         
         // creation of FloorMapView w/ the library (SUGGESTED)
-        self.locationProvider.showFloorMap(CGRect(x: 20, y: 40, width: 247, height: 323))
+        self.locationProvider.showFloorMap(CGRect(x: 20, y: 60, width: 147, height: 223))
     }
     
     func loadDynamicData() -> [Marker] {
